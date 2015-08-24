@@ -45,7 +45,7 @@
 
 <% if (!index && post.comments && (config.duoshuo_shortname || theme.duoshuo_shortname)){ %>
   <section id="comments">
-    <div id="ds-thread" class="ds-thread" data-thread-key="<%= post.path %>" data-title="<%= post.title %>" data-url="<%= post.permalink %>"></div>
+    <div id="ds-thread" class="ds-thread" data-thread-key="<%= post.source %>" data-title="<%= post.title %>" data-url="<%= post.permalink %>"></div>
   </section>
 <% } else if (!index && post.comments && config.disqus_shortname){ %>
   <section id="comments">
